@@ -1,0 +1,27 @@
+
+
+
+  <% @todas.each do |post| %> 
+  <div class="post"><!-- INICIO DA DIV DA POSTAGEM -->
+  <div class="titlePost"> <%= post.titulo %>  <hr></div> <!-- TÍTULO DA POSTAGEM -->
+  <div class="postagemCorpo" ><!-- FIM DA DIV DO CORPO DA POSTAGEM -->
+  <%= post.conteudo %>
+</div>
+<br>
+<hr>
+
+<div class="rodapePost">
+  <div class="dataPostagem" > 
+      <%= post.created_at %>
+   </div> 
+  
+  <div class="autorPostagem"> 
+    <%= post.autor %>
+    <%= form_for Postagem.new do |f| %>
+  </div>
+  <hr>
+</div>
+</div><!-- FIM DA DIV DA POSTAGEM -->
+
+  <%end%>
+    <%end%>

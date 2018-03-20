@@ -1,0 +1,89 @@
+// Place all the styles related to the postagens controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.feed {
+background-color: rgb(0, 0, 0);
+margin: 0;
+//text-align: center;
+//display: flex;
+//justify-content: center;
+//align-items: center;
+   
+.top {
+    padding-top: 10vh;
+    background-color:  rgb(201, 56, 92);
+    color: white;
+    text-align: center;
+    font-size: 100px;
+    font-style: oblique;
+    font-family: 'Trebuchet MS';
+    width: 100%;
+    height: 30vh;
+   transition: 2s;
+   background-image:url("goku.png");
+   background-blend-mode: color-burn;
+   background-position-x: 50%;
+
+}
+.top:hover {
+
+    background-color:  rgb(56, 167, 201);
+  
+}
+
+.titlePost{
+    text-indent: 0px;
+    font-weight: bold;
+font-family: 'Trebuchet MS';
+font-size: 30px;
+margin: 0px;
+border-bottom: 3px gray;
+margin-bottom: 2vw;
+
+}
+
+.corpo {
+
+    border-radius: 25px;
+    padding: 20px;
+    width: 60%;
+    margin:auto;
+    background: white;
+
+
+    }
+
+.post {
+font-family: 'Trebuchet MS';
+font-size: 18px;
+padding: 20px;
+
+
+min-height: 200px;
+margin-top: -10px;
+text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;
+}
+
+.rodapePost {
+    text-indent: 0px;
+    font-size: 16px;
+    color: rgb(56, 56, 56);
+    }
+
+    .mainTitle {
+
+        color: white;
+        text-shadow: 0 0.032em 0 #b0b0b0, 0px 0.15em 0.11em rgba(0,0,0,0.15), 0px 0.25em 0.021em rgba(0,0,0,0.1), 0px 0.32em 0.32em rgba(0,0,0,0.1);
+        font-size: 100px;
+       
+        }
+
+        .mainTitle.ex1 {
+            overflow-y: scroll;
+        }
+        
+
+}

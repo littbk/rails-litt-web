@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog do BK</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class = "feed"> 
+  <div class="top">
+    <div class="mainTitle" >Blog do BK</div>
+  </div>
+  <div class="corpo">
+
+    <%= yield %>
+    </div>
+  </body>
+</html>
