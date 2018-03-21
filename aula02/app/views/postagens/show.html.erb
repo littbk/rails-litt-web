@@ -1,0 +1,23 @@
+<h2>Ola, sou a postagem</h2>
+
+<div class="post"><!-- INICIO DA DIV DA POSTAGEM -->
+<div class="titlePost"> <%= link_to "#{post.titulo}","postagems/#{post.id}" %>  <hr></div> <!-- TÍTULO DA POSTAGEM -->
+<div class="postagemCorpo" ><!-- FIM DA DIV DO CORPO DA POSTAGEM -->
+<%= post.conteudo %>
+</div>
+
+<hr>
+
+<div class="rodapePost">
+<div class="dataPostagem" > 
+<%= post.created_at %>
+</div> 
+
+<div class="autorPostagem"> 
+<%= post.autor %>
+
+  </div>
+  <hr>
+  </div>
+
+  </div><!-- FIM DA DIV DA POSTAGEM -->

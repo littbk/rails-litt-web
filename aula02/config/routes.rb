@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   root "postagens#home"
   get "postagens/new" => "postagens#new.html.erb"
   post "/postagems" => "postagens#create"
-
+  get "/postagems/:id" => "postagens#show"
 end

@@ -21,5 +21,11 @@ class PostagensController < ApplicationController
 
     end
 
+    def show
+
+        
+
+    end
+
 
 end

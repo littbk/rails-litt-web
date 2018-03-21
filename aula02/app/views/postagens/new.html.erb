@@ -1,7 +1,7 @@
 
 
 <%= form_for Postagem.new do |f| %>
-
+  <%= link_to "Home","/" %>
   <div class="form-group" >
 
     <label for="titulo">Título:</label>
@@ -18,6 +18,6 @@
     <input type="text" class="form-control" id="autor" name="postagem[autor]">
   </div>
   <button type="submit" class="btn btn-default">Submit</button>
-  
+ 
 <%end%>
 

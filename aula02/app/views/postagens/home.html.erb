@@ -1,27 +1,29 @@
 
 
-
-  <% @todas.each do |post| %> 
+ <%= link_to "Nova Postagem","/postagens/new" %>
+<% @todas.each do |post| %> 
   <div class="post"><!-- INICIO DA DIV DA POSTAGEM -->
-  <div class="titlePost"> <%= post.titulo %>  <hr></div> <!-- TÍTULO DA POSTAGEM -->
+  <div class="titlePost"> <%= link_to "#{post.titulo}","postagems/#{post.id}" %>  <hr></div> <!-- TÍTULO DA POSTAGEM -->
   <div class="postagemCorpo" ><!-- FIM DA DIV DO CORPO DA POSTAGEM -->
   <%= post.conteudo %>
-</div>
-<br>
-<hr>
+  </div>
 
-<div class="rodapePost">
+  <hr>
+  
+  <div class="rodapePost">
   <div class="dataPostagem" > 
-      <%= post.created_at %>
-   </div> 
+  <%= post.created_at %>
+  </div> 
   
   <div class="autorPostagem"> 
-    <%= post.autor %>
-    <%= form_for Postagem.new do |f| %>
-  </div>
-  <hr>
-</div>
-</div><!-- FIM DA DIV DA POSTAGEM -->
-
-  <%end%>
+  <%= post.autor %>
+  <%= form_for Postagem.new do |f| %> <!-- FOR DAS POSTAGEM -->
+    </div>
+    <hr>
+    </div>
+  
+    </div><!-- FIM DA DIV DA POSTAGEM -->
+    
     <%end%>
+    <%end%>
+    
